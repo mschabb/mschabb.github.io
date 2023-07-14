@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atlantic Coral Reef Fish ID | National Aquarium</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    h2 {
+      margin-bottom: 1px;
+    }
+    h5 {
+      margin-top: 1px;
+      margin-bottom: 14px;
+      font-style: italic;
+    }
+    p {
+      line-height: 1.1; 
+      margin-bottom: 8px; 
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <img src="./images/Splash_screen.png" alt="Atlantic Coral Reef Fish Identification" class="img-fluid">
+      </div>
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <p><b>Click the National Aquarium logo to navigate</b></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+        <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+      </a>
+    </div>
+  </div>
+
+<!-- Modal dialog implementing the navigation -->
+<div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <ul class="list-group">
+        <li class="list-group-item"><a href="#blacknose_shark" onclick="closeModal('blacknose_shark')">Blacknose shark</a></li>
+        <li class="list-group-item"><a href="#green_moray_eel" onclick="closeModal('green_moray_eel')">Green moray eel</a></li>
+        <li class="list-group-item"><a href="#whitespotted_filefish" onclick="closeModal('whitespotted_filefish')">White spotted filefish</a></li>
+        <li class="list-group-item"><a href="#blue_tang" onclick="closeModal('blue_tang')">Blue tang</a></li>
+        <li class="list-group-item"><a href="#doctorfish" onclick="closeModal('doctorfish')">Doctorfish</a></li>
+        <li class="list-group-item"><a href="#atlantic_spadefish" onclick="closeModal('')">Atlantic spadefish</a></li>
+        <li class="list-group-item"><a href="#lookdown" onclick="closeModal('lookdown')">Lookdown</a></li>
+        <li class="list-group-item"><a href="#bar_jack" onclick="closeModal('bar_jack')">Bar jack</a></li>
+        <li class="list-group-item"><a href="#graysby" onclick="closeModal('graysby')">Graysby</a></li>
+        <li class="list-group-item"><a href="#black_grouper" onclick="closeModal('black_grouper')">Black grouper</a></li>
+        <li class="list-group-item"><a href="#black_durgeon" onclick="closeModal('black_durgeon')">Black durgeon</a></li>
+        <li class="list-group-item"><a href="#queen_triggerfish" onclick="closeModal('queen_triggerfish')">Queen triggerfish</a></li>
+        <li class="list-group-item"><a href="#sand_tilefish" onclick="closeModal('sand_tilefish')">Sand tilefish</a></li>
+        <li class="list-group-item"><a href="#atlantic_tarpon" onclick="closeModal('atlantic_tarpon')">Atlantic tarpon</a></li>
+        <li class="list-group-item"><a href="#french_angelfish" onclick="closeModal('french_angelfish')">French angelfish</a></li>
+        <li class="list-group-item"><a href="#blue_angelfish" onclick="closeModal('blue_angelfish')">Blue angelfish</a></li>
+        <li class="list-group-item"><a href="#grey_angelfish" onclick="closeModal('grey_angelfish')">Grey angelfish</a></li>
+        <li class="list-group-item"><a href="#queen_angelfish" onclick="closeModal('queen_angelfish')">Queen angelfish</a></li>
+        <li class="list-group-item"><a href="#atlantic_jewel_damsel" onclick="closeModal('')">Atlantic jewel damsel</a></li>
+        <li class="list-group-item"><a href="#beaugregory" onclick="closeModal('beaugregory')">Beaugregory</a></li>
+        <li class="list-group-item"><a href="#bicolor_damsel" onclick="closeModal('bicolor_damsel')">Bicolor damsel</a></li>
+        <li class="list-group-item"><a href="#sergeant_major" onclick="closeModal('sergeant_major')">Sergeant major</a></li>
+        <li class="list-group-item"><a href="#banded_butterflyfish" onclick="closeModal('banded_butterflyfish')">Banded butterflyfish</a></li>
+        <li class="list-group-item"><a href="#foureyed_butterflyfish" onclick="closeModal('foureyed_butterflyfish')">Foureyed butterflyfish</a></li>
+        <li class="list-group-item"><a href="#reef_butterflyfish" onclick="closeModal('reef_butterflyfish')">Reef butterflyfish</a></li>
+        <li class="list-group-item"><a href="#spotfin_butterflyfish" onclick="closeModal('spotfin_butterflyfish')">Spotfin butterflyfish</a></li>
+        <li class="list-group-item"><a href="#yellowhead_wrasse" onclick="closeModal('yellowhead_wrasse')">Yellowhead wrasse</a></li>
+        <li class="list-group-item"><a href="#puddingwife_wrasse" onclick="closeModal('puddingwife_wrasse')">Puddingwife wrasse</a></li>
+        <li class="list-group-item"><a href="#creole_wrasse" onclick="closeModal('creole_wrasse')">Creole wrasse</a></li>
+        <li class="list-group-item"><a href="#bluehead_wrasse" onclick="closeModal('bluehead_wrasse')">Bluehead wrasse</a></li>
+        <li class="list-group-item"><a href="#smallmouth_grunt" onclick="closeModal('smallmouth_grunt')">Smallmouth grunt</a></li>
+        <li class="list-group-item"><a href="#spanish_grunt" onclick="closeModal('spanish_grunt')">Spanish grunt</a></li>
+        <li class="list-group-item"><a href="#tomtate" onclick="closeModal('tomtate')">Tomtate</a></li>
+        <li class="list-group-item"><a href="#french_grunt" onclick="closeModal('french_grunt')">French grunt</a></li>
+        <li class="list-group-item"><a href="#stoplight_parrotfish" onclick="closeModal('stoplight_parrotfish')">Stoplight parrotfish</a></li>
+        <li class="list-group-item"><a href="#redband_parrotfish" onclick="closeModal('redband_parrotfish')">Redband parrotfish</a></li>
+        <li class="list-group-item"><a href="#striped_parrotfish" onclick="closeModal('striped_parrotfish')">Striped parrotfish</a></li>
+        <li class="list-group-item"><a href="#redtail_parrotfish" onclick="closeModal('redtail_parrotfish')">Redtail parrotfish</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>    
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Blacknose shark ######################### -->
+      <div class="col-md-6" id="blacknose_shark">
+        <img src="./images/blacknose_shark.png" class="img-fluid" alt="Blacknose shark">
+        <h2 class="fw-bold">Blacknose shark</h2>
+        <h5 class="text-muted fw-light">Carcharhinus acronotus</h5>
+        <p>A type of requiem shark found in tropical Atlantic waters.</p>
+        <p>Gives live birth (litter size 1-6) in nursery habitats, often near mangroves or coastal bays.</p>
+        <p>The black dot is less apparent in older individuals.</p>
+        <p>Life span estimated at 15-19 years, reaching maturity ~4.5 years.</p>
+        <p>Assessed as Endangered in 2009.</p>
+      </div>
+
+      <!-- ##################### Green moray eel ######################### -->
+      <div class="col-md-6" id="green_moray_eel">
+        <img src="./images/green_moray_eel.png" class="img-fluid" alt="Green moray eel">
+        <div class="modal fade" id="imageModal_pharyngeal_jaw" tabindex="-1" aria-labelledby="imageModalLabel_pharyngeal_jaw" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_pharyngeal_jaw">Pharyngeal jaw</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/pharyngeal_jaw.png" alt="Pharyngeal jaw">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Green moray eel</h2>
+            <h5 class="text-muted fw-light">Gymnothorax funebris</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_pharyngeal_jaw">
+              Pharyngeal jaw
+            </button>
+          </div>
+        </div>
+        <p>This moray is actually brown! A thick layer of yellow mucus gives it its green hue.</p>
+        <p>Nocturnal and solitary, it hunts in crevices of reefs.</p>
+        <p>If prey appears too large, the eels can “tie” it up with their bodies and tear it into smaller bites.</p>
+        <p>Known for their moveable pharyngeal jaws (think the Xenomorph queen from Alien). This allows them to swallow prey without stretching their mouth wider than the caverns they hunt in.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Whitespotted filefish ######################### -->
+      <div class="col-md-6" id="whitespotted_filefish">
+        <img src="./images/whitespotted_filefish.png" class="img-fluid" alt="Whitespotted filefish">
+        <h2 class="fw-bold">Whitespotted filefish</h2>
+        <h5 class="text-muted fw-light">Cantherhines macrocerus</h5>
+        <p>Like triggerfish, filefish have a distinct dorsal spine, which they use for protection—they erect it after swimming into crevices in the reef, thereby wedging their bodies inside the space.</p>
+        <p>Their bodies are often also covered in setae (small spines) that give their skin a sandpaper-like texture.</p>
+        <p>Males usually have longer spines on the caudal peduncle than females. </p>
+      </div>
+
+      <!-- ##################### Blue tang ######################### -->
+      <div class="col-md-6" id="blue_tang">
+        <img src="./images/blue_tang.png" class="img-fluid" alt="Blue tang">
+        <div class="modal fade" id="imageModal_blue_tang" tabindex="-1" aria-labelledby="imageModalLabel_blue_tang" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_blue_tang">Blue tang - juvenile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/blue_tang_juv.png" alt="Blue tang - juvenile">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="imageModal_blue_tang_trans" tabindex="-1" aria-labelledby="imageModalLabel_blue_tang_trans" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_blue_tang_trans">Blue tang - transitional</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/blue_tang_trans.png" alt="Blue tang - transitional">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Blue tang</h2>
+            <h5 class="text-muted fw-light">Acanthurus coeruleus</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#imageModal_blue_tang">
+              Juvenile
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_blue_tang_trans">
+              Transitional
+            </button>
+          </div>
+        </div>
+        <p>The Atlantic blue tang is a type of surgeonfish, recognized by its oval body and noticeable spines (like scalpels) near the caudal peduncle. </p>
+        <p>It has distinct color phases, often displaying bright yellow as a juvenile with yellow caudal fins; and a purple gray or bright blue body as the fish transitions to its fully blue adult form.</p>
+        <p>Biofluorescence in larval blue tangs has also been documented, possibly as a form of camouflage, or as a way of communicating with others of their species.</p>
+        <p>Generally herbivorous — although ours love krill pops!</p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Doctorfish ######################### -->
+      <div class="col-md-6" id="doctorfish">
+        <img src="./images/doctorfish.png" class="img-fluid" alt="Doctorfish">
+        <div class="modal fade" id="imageModal_doctorfish" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Doctorfish - juvenile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/doctorfish_juv.png" alt="Lookdown - juvenile">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Doctorfish</h2>
+            <h5 class="text-muted fw-light">Acanthurus chirurgus</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_doctorfish">
+              Juvenile
+            </button>
+          </div>
+        </div>
+        <p>Doctorfish are commonly found on the rocky outcroppings of reefs.</p>
+        <p>Their diet is mostly herbivorous, with their teeth designed to scrape algae from coral and rock.</p>
+        <p>They swallow food whole, which requires them to have a gizzard-like organ with sand inside to aide in pre-digesting plant matter.</p>
+        <p>As larvae, they have large dorsal and ventral spines, which help with protection and flotation, to an extent. The scalpel spines usually come in when the fish are ~13 mm.</p>
+      </div>
+
+      <!-- ##################### Atlantic spadefish ######################### -->
+      <div class="col-md-6" id="atlantic_spadefish">
+        <img src="./images/atlantic_spadefish.png" class="img-fluid" alt="Atlantic spadefish">
+        <div class="modal fade" id="imageModal_atlantic_spadefish" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Atlantic spadefish - juvenile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/atlantic_spadefish_juv.png" alt="Lookdown - juvenile">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Atlantic spadefish</h2>
+            <h5 class="text-muted fw-light">Chaetodipterus faber</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_atlantic_spadefish">
+              Juvenile
+            </button>
+          </div>
+        </div>
+        <p>Like their close relatives the orbicular batfish, Atlantic spadefish are often found in estuaries or coastal waters in their juvenile black form. Juveniles adopt an angular swimming pattern, to resemble dead leaf debris. </p>
+        <p>Large schools of adults (up to 500) commonly forage and hunt for mollusks, marine worms, crustaceans, and jellies.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Lookdown ######################### -->
+       <div class="col-md-6" id="lookdown">
+        <img src="./images/lookdown.png" class="img-fluid" alt="Lookdown - adult">
+        <div class="modal fade" id="imageModal_lookdown_juv" tabindex="-1" aria-labelledby="imageModalLabel_lookdown_juv" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_lookdown_juv">Lookdown - juvenile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/lookdown_juv.png" alt="Lookdown - juvenile">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Lookdown</h2>
+            <h5 class="text-muted fw-light">Selene vomer</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal">
+              Juvenile
+            </button>
+          </div>
+        </div>
+        <p>Lookdowns are coastal dwelling fish, found in the western Atlantic from Canada to Uruguay. </p>
+        <p>They hunt for crabs, shrimp, fish, and worms among the hard or sandy substrates of their preferred habitats.</p>
+        <p>There is little commercial interest in them except for the aquarium trade, where their unique shape and flashy scales make them a sought-after species for display.</p>
+        <p>Juveniles look festive, with dorsal filaments that they lose by adulthood.</p>
+      </div>
+
+      <!-- ##################### Bar jack ######################### -->
+      <div class="col-md-6" id="bar_jack">
+        <img src="./images/bar_jack.png" class="img-fluid" alt="Bar jack">
+        <h2 class="fw-bold">Bar jack</h2>
+        <h5 class="text-muted fw-light">Caranx ruber</h5>
+        <p>A relative of the lookdown, bar jacks are found from New Jersey southwards to the coasts of Venezuela.</p>
+        <p>They are easily distinguished by the dark horizontal bar that runs along their backs with a bright blue one immediately beneath it.</p>
+        <p>Spawning happens twice per year with females releasing 67k-230k eggs.</p>
+        <p>Larvae grow rapidly and the juveniles are often seen near rafts of brown algae or in shallow reefs.</p>
+        <p>Upon reaching adulthood, they head for deeper offshore waters and more open spaces.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Graysby ######################### -->
+      <div class="col-md-6" id="graysby">
+        <img src="./images/graysby.png" class="img-fluid" alt="Graysby">
+        <h2 class="fw-bold">Graysby</h2>
+        <h5 class="text-muted fw-light">Cephalopholis cruentata</h5>
+        <p>These grouper are often seen in seagrass beds or coral reefs from Cape Fear, NC southwards to the Caribbean coasts of South America.</p>
+        <p>They are identified by their coloration (olive or brown base with red spots) and four contrasting white or black splotches at the base of their dorsal fin.</p>
+        <p>This species is a <i>protogynous hermaphrodite</i>, where  fish start out as female and become male after 4-5 years, immediately after the spawning season.</p>
+      </div>
+
+      <!-- ##################### Black grouper ######################### -->
+      <div class="col-md-6" id="black_grouper">
+        <img src="./images/black_grouper.png" class="img-fluid" alt="Black grouper">
+        <h2 class="fw-bold">Black grouper</h2>
+        <h5 class="text-muted fw-light">Mycteroperca bonaci</h5>
+        <p>These large groupers are great ambush predators.</p>
+        <p>While they lack proper teeth, they have teeth plates in their throats to prevent prey that has been suctioned in from escaping.</p>
+        <p>Like the Graysby, black groupers are also hermaphrodites, starting life as females with some transitioning to males after 10-14 years. The usual ratio is four females to every male.</p>
+        <p>They can live ~30 years.</p>
+        <p>Although a popular commercial and recreational fish, proper management has meant their populations in the Atlantic and Caribbean are stable. </p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Black durgeon ######################### -->
+      <div class="col-md-6" id="black_durgeon">
+        <img src="./images/black_durgeon.png" class="img-fluid" alt="Black durgeon">
+        <h2 class="fw-bold">Black durgeon</h2>
+        <h5 class="text-muted fw-light">Melichthys niger</h5>
+        <p>With proper lighting, the black triggerfish/durgeon shows off its lighter colors: dark blue and green, with some orange at the front of its head.</p>
+        <p>It also has a deep-set groove in front of its eye.</p>
+        <p>It has a global distribution, populating isolated reefs in tropical latitudes. In the Pacific, it is often confused for its cousin, the Indian, or blackfin, triggerfish.</p>
+        <p>Hawaiians call it <i>Humuhumu'ele'ele</i></p>
+      </div>
+
+      <!-- ##################### Queen triggerfish ######################### -->
+      <div class="col-md-6" id="queen_triggerfish">
+        <img src="./images/queen_triggerfish.png" class="img-fluid" alt="Queen triggerfish">
+        <h2 class="fw-bold">Queen triggerfish</h2>
+        <h5 class="text-muted fw-light">Balistes vetula</h5>
+        <p>Queen triggerfish are one of the largest and more aggressive triggerfish species; as such they require large exhibits, like ACR.</p>
+        <p>In the ocean, these fish often prey on sea urchins by blowing them over, thereby gaining access to the urchin’s vulnerable mouth and underside. </p>
+        <p>Triggerfish in general have a larger <i>telencephalon</i> — a brain region that may help them with spatial awareness and problem solving while hunting. </p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Sand tilefish ######################### -->
+      <div class="col-md-6" id="sand_tilefish">
+        <img src="./images/sand_tilefish.png" class="img-fluid" alt="Sand tilefish">
+        <h2 class="fw-bold">Sand tilefish</h2>
+        <h5 class="text-muted fw-light">Malacanthus plumieri</h5>
+        <p>Sand tilefish are found in shallow coastal waters (15-500 ft) over sandy substrate. This allows the fish to create a burrow which it can enter when threatened. </p>
+        <p>They range from Bermuda southwards throughout the Yucatan peninsula, feeding on mantis shrimp, marine worms, and armored chitons.</p>
+        <p>By undulating its dorsal and anal fins, this species is capable of hovering for extended periods of time, usually near the entrance to their burrows.</p>
+      </div>
+
+      <!-- ##################### Atlantic tarpon ######################### -->
+      <div class="col-md-6" id="atlantic_tarpon">
+        <img src="./images/atlantic_tarpon.png" class="img-fluid" alt="Atlantic tarpon">
+        <div class="modal fade" id="imageModal_atlantic_tarpon_larva" tabindex="-1" aria-labelledby="imageModalLabel_atlantic_tarpon_larva" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_atlantic_tarpon_larva">Atlantic tarpon - larva</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/atlantic_tarpon_larva.png" alt="Atlantic tarpon - larva">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="imageModal_moray_eel_larva" tabindex="-1" aria-labelledby="imageModalLabel_moray_eel_larva" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_moray_eel_larva">Moray eel - larva</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/moray_eel_larva.png" alt="Moray eel - larva">
+                <p></p>
+                <p>The <i>leptocephalus</i> larva of a moray eel. </p>
+                <p>This larval body type ties tarpons, ladyfish, and eels into the same Order. </p>
+                <p>Larval tarpon and eels can’t regulate their internal salinity well, and must hatch in water with stable salinities, offshore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-6">
+            <h2 class="fw-bold">Atlantic tarpon</h2>
+            <h5 class="text-muted fw-light">Megalops atlanticus</h5>
+          </div>
+          <div class="col-6 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#imageModal_atlantic_tarpon_larva">
+              Larva
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_moray_eel_larva">
+              Eel larva
+            </button>
+          </div>
+        </div>
+        <p>Tarpon evolved around 18 million years ago and have remained relatively unchanged since.</p>
+        <p>Their larval form avoids predation by being transparent, and the larvae do not actually eat, floating along with currents, having minimal energy requirements.</p>
+        <p>Juveniles can survive in coastal waters with low oxygen, since their swim bladders act as a rudimentary lung, allowing the fish to gulp air at the surface.</p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Angelfish ######################### -->
+        <h2 class="fw-bold">Angelfish</h2>
+        <p>There are ~90 different species of angelfish.</p>
+        <p>Bright and colorful denizens of coral reefs, they are distinguished from butterflyfish by the preopercle spines preceding their gill covering. </p>
+        <p>While some species are monogamous, others are not. Some form harems, and lekking behavior (competitive displays by multiple males) has been seen in others. With such colorful scales, it’s not hard to see why.</p>
+        <p>Juveniles may have such different coloration to hide they are potential competitors with adult members of their own species.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### French angelfish ######################### -->
+      <div class="col-md-6" id="french_angelfish">
+        <img src="./images/french_angelfish.png" class="img-fluid" alt="French angelfish">
+        <div class="modal fade" id="imageModal_french_angelfish" tabindex="-1" aria-labelledby="imageModalLabel_french_angelfish" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_french_angelfish">French angelfish - juvenile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/french_angelfish_juv.png" alt="French angelfish - juvenile">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">French angelfish</h2>
+            <h5 class="text-muted fw-light">Pomacanthus paru</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_french_angelfish">
+              Juvenile
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ##################### Blue angelfish ######################### -->
+      <div class="col-md-6" id="blue_angelfish">
+        <img src="./images/blue_angelfish.png" class="img-fluid" alt="Blue angelfish">
+        <div class="modal fade" id="imageModal_blue_angelfish" tabindex="-1" aria-labelledby="imageModalLabel_blue_angelfish" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_blue_angelfish">Blue angelfish - juvenile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/blue_angelfish_juv.png" alt="Blue angelfish - juvenile">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Blue angelfish</h2>
+            <h5 class="text-muted fw-light">Holacanthus bermudensis</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_blue_angelfish">
+              Juvenile
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Grey angelfish ######################### -->
+      <div class="col-md-6" id="grey_angelfish">
+        <img src="./images/grey_angelfish.png" class="img-fluid" alt="Grey angelfish">
+        <div class="modal fade" id="imageModal_grey_angelfish" tabindex="-1" aria-labelledby="imageModalLabel_grey_angelfish" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_grey_angelfish">Grey angelfish - juvenile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/grey_angelfish_juv.png" alt="Grey angelfish - juvenile">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Grey angelfish</h2>
+            <h5 class="text-muted fw-light">Pomacanthus arcuatus</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_grey_angelfish">
+              Juvenile
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ##################### Queen angelfish ######################### -->
+      <div class="col-md-6" id="queen_angelfish">
+        <img src="./images/queen_angelfish.png" class="img-fluid" alt="Queen angelfish">
+        <div class="modal fade" id="imageModal_queen_angelfish" tabindex="-1" aria-labelledby="imageModalLabel_queen_angelfish" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_queen_angelfish">Queen angelfish - juvenile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/queen_angelfish_juv.png" alt="Queen angelfish - juvenile">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Queen angelfish</h2>
+            <h5 class="text-muted fw-light">Holacanthus ciliaris</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_queen_angelfish">
+              Juvenile
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Damselfish ######################### -->
+        <h2 class="fw-bold">Damselfish</h2>
+        <p>These hardy fish are often found in nooks and crannies of rocky or coral reefs. Most are small (unlike their larger Pacific cousin, the Garibaldi).</p>
+        <p>Longfin damselfish near Belize have been seen farming algae with help of mysid shrimp. The shrimp fertilize the algae with their waste, improving the food quality for the damselfish. Farms with mysid shrimp are defended by damselfish more vigorously than farms without.</p>
+        <p>Females choose mates based on the quality of a male’s courtship display. Males “signal jump”—swimming up and down quickly while making a pulsing noise. The pulse rate helps females pick.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Atlantic jewel damsel ######################### -->
+      <div class="col-md-6" id="atlantic_jewel_damsel">
+        <img src="./images/atlantic_jewel_damsel.png" class="img-fluid" alt="Atlantic jewel damsel">
+        <h2 class="fw-bold">Atlantic jewel damsel</h2>
+        <h5 class="text-muted fw-light">Microspathodon chrysurus</h5>
+      </div>
+
+      <!-- ##################### Beaugregory ######################### -->
+      <div class="col-md-6" id="beaugregory">
+        <img src="./images/beaugregory.png" class="img-fluid" alt="Beaugregory">
+        <h2 class="fw-bold">Beaugregory</h2>
+        <h5 class="text-muted fw-light">Stegastes leucostictus</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Bicolor damsel ######################### -->
+      <div class="col-md-6" id="bicolor_damsel">
+        <img src="./images/bicolor_damsel.png" class="img-fluid" alt="Bicolor damsel">
+        <h2 class="fw-bold">Bicolor damsel</h2>
+        <h5 class="text-muted fw-light">Stegastes partitus</h5>
+      </div>
+
+      <!-- ##################### Sergeant major ######################### -->
+      <div class="col-md-6" id="sergeant_major">
+        <img src="./images/sergeant_major.png" class="img-fluid" alt="Sergeant major">
+        <h2 class="fw-bold">Sergeant major</h2>
+        <h5 class="text-muted fw-light">Abudefduf saxatilis</h5>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Hamlet ######################### -->
+        <h2 class="fw-bold">Hamlet</h2>
+        <p>Hamlets belong to the Family Serranidae, a catch-all that includes seabasses, basslets, hinds, and groupers. Originally, they were all thought to be one species with different color morphs, and there is still debate over how many different species are within their genus. </p>
+        <p>Some hamlets are known to by synchronous hermaphrodites, meaning they have both male and female reproductive organs. They do not self-fertilize, but mate in pairs with other fish of their same or similar color morph. </p>
+        <p>They are predatory fish that prey on mysids, shrimp, other small crustaceans, and occasionally other fishes. </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Barred hamlet ######################### -->
+      <div class="col-md-6" id="barred_hamlet">
+        <img src="./images/barred_hamlet.png" class="img-fluid" alt="Barred hamlet">
+        <h2 class="fw-bold">Barred hamlet</h2>
+        <h5 class="text-muted fw-light">Hypoplectrus puella</h5>
+      </div>
+
+      <!-- ##################### Black hamlet ######################### -->
+      <div class="col-md-6" id="black_hamlet">
+        <img src="./images/black_hamlet.png" class="img-fluid" alt="Black hamlet">
+        <h2 class="fw-bold">Black hamlet</h2>
+        <h5 class="text-muted fw-light">Hypoplectrus nigricans</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Indigo hamlet ######################### -->
+      <div class="col-md-6" id="indigo_hamlet">
+        <img src="./images/indigo_hamlet.png" class="img-fluid" alt="Indigo hamlet">
+        <h2 class="fw-bold">Indigo hamlet</h2>
+        <h5 class="text-muted fw-light">Hypoplectrus indigo</h5>
+      </div>
+
+      <!-- ##################### Butter hamlet ######################### -->
+      <div class="col-md-6" id="butter_hamlet">
+        <img src="./images/butter_hamlet.png" class="img-fluid" alt="Butter hamlet">
+        <h2 class="fw-bold">Butter hamlet</h2>
+        <h5 class="text-muted fw-light">Hypoplectrus unicolor</h5>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Butterflyfish ######################### -->
+        <h2 class="fw-bold">Butterflyfish</h2>
+        <p>A group of reef fishes known for diverse mouth and jaw adaptations for selective feeding (ranging from long, forceps-like jaws for pulling prey from crevices, to stubby snouts for rasping on coral).</p>
+        <p>Most species are known to swim in mated pairs, with some occasionally schooling. </p>
+        <p>Life expectancy is usually 3-4 years, with maturity being reached after one year. </p>
+        <p>Since many butterflyfish species rely on coral for food, they can act as an indicator species for the health of a reef. </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Banded butterflyfish ######################### -->
+      <div class="col-md-6" id="banded_butterflyfish">
+        <img src="./images/banded_butterflyfish.png" class="img-fluid" alt="Banded butterflyfish">
+        <h2 class="fw-bold">Banded butterflyfish</h2>
+        <h5 class="text-muted fw-light">Chaetodon striatus</h5>
+      </div>
+
+      <!-- ##################### Foureyed butterflyfish ######################### -->
+      <div class="col-md-6" id="foureyed_butterflyfish">
+        <img src="./images/foureyed_butterflyfish.png" class="img-fluid" alt="Foureyed butterflyfish">
+        <h2 class="fw-bold">Foureyed butterflyfish</h2>
+        <h5 class="text-muted fw-light">Chaetodon capistratus</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Reef butterflyfish ######################### -->
+      <div class="col-md-6" id="reef_butterflyfish">
+        <img src="./images/reef_butterflyfish.png" class="img-fluid" alt="Reef butterflyfish">
+        <h2 class="fw-bold">Reef butterflyfish</h2>
+        <h5 class="text-muted fw-light">Chaetodon sedentarius</h5>
+      </div>
+
+      <!-- ##################### Spotfin butterflyfish ######################### -->
+      <div class="col-md-6" id="spotfin_butterflyfish">
+        <img src="./images/spotfin_butterflyfish.png" class="img-fluid" alt="Spotfin butterflyfish">
+        <h2 class="fw-bold">Spotfin butterflyfish</h2>
+        <h5 class="text-muted fw-light">Chaetodon ocellatus</h5>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Wrasse ######################### -->
+        <h2 class="fw-bold">Wrasse</h2>
+        <p>Wrasses are usually colorful fishes associated with reefs, found in the Atlantic, Pacific, and Indian basins. </p>
+        <p>They are known for their sharp, outward-jutting front teeth, and crushing pharyngeal jaws further back in their throats.</p>
+        <p>Many wrasses engage in symbiotic cleaning of larger fish (some of whom are natural predators). Their teeth make them excellent candidates for picking off varieties of parasites from the scales and mouths of these fishes. This behavior has also been used in aquaculture, with wrasses keeping parasitic outbreaks among salmon and tilapia in check.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Yellowhead wrasse ######################### -->
+      <div class="col-md-6" id="yellowhead_wrasse">
+        <img src="./images/yellowhead_wrasse.png" class="img-fluid" alt="Yellowhead wrasse">
+        <h2 class="fw-bold">Yellowhead wrasse</h2>
+        <h5 class="text-muted fw-light">Halichoeres garnoti</h5>
+      </div>
+
+      <!-- ##################### Puddingwife wrasse ######################### -->
+      <div class="col-md-6" id="puddingwife_wrasse">
+        <img src="./images/puddingwife_wrasse.png" class="img-fluid" alt="Puddingwife wrasse">
+        <h2 class="fw-bold">Puddingwife wrasse</h2>
+        <h5 class="text-muted fw-light">Halichoeres radiatus</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Creole wrasse ######################### -->
+      <div class="col-md-6" id="creole_wrasse">
+        <img src="./images/creole_wrasse.png" class="img-fluid" alt="Creole wrasse">
+        <h2 class="fw-bold">Creole wrasse</h2>
+        <h5 class="text-muted fw-light">Clepticus parrae</h5>
+      </div>
+
+      <!-- ##################### Bluehead wrasse ######################### -->
+      <div class="col-md-6" id="bluehead_wrasse">
+        <img src="./images/bluehead_wrasse.png" class="img-fluid" alt="Bluehead wrasse">
+        <h2 class="fw-bold">Bluehead wrasse</h2>
+        <h5 class="text-muted fw-light">Thalassoma bifasciatum</h5>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Grunt ######################### -->
+        <h2 class="fw-bold">Grunt</h2>
+        <p>Grunts, named for their ability to make noise by grinding their teeth, are often found in salty coastal waters (near reefs or seasonal algae beds) and brackish estuaries. </p>
+        <p>Many are nocturnal hunters, feeding on benthic invertebrates. </p>
+        <p>Grunts, among other reef fishes, often thrive in other coastal environments, like mangroves, as juveniles. It has been documented in Belize that reefs located near mangrove forests support 26 times more fish biomass (from juveniles successfully recruiting to the reefs) than reefs without mangroves nearby.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Smallmouth grunt ######################### -->
+      <div class="col-md-6" id="smallmouth_grunt">
+        <img src="./images/smallmouth_grunt.png" class="img-fluid" alt="Smallmouth grunt">
+        <h2 class="fw-bold">Smallmouth grunt</h2>
+        <h5 class="text-muted fw-light">Haemulon chrysargyreum</h5>
+      </div>
+
+      <!-- ##################### Spanish grunt ######################### -->
+      <div class="col-md-6" id="spanish_grunt">
+        <img src="./images/spanish_grunt.png" class="img-fluid" alt="Spanish grunt">
+        <h2 class="fw-bold">Spanish grunt</h2>
+        <h5 class="text-muted fw-light">Haemulon macrostomum</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Tomtate ######################### -->
+      <div class="col-md-6" id="tomtate">
+        <img src="./images/tomtate.png" class="img-fluid" alt="Tomtate">
+        <h2 class="fw-bold">Tomtate</h2>
+        <h5 class="text-muted fw-light">Haemulon aurolineatum</h5>
+      </div>
+
+      <!-- ##################### French grunt ######################### -->
+      <div class="col-md-6" id="french_grunt">
+        <img src="./images/french_grunt.png" class="img-fluid" alt="French grunt">
+        <h2 class="fw-bold">French grunt</h2>
+        <h5 class="text-muted fw-light">Haemulon flavolineatum</h5>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Parrotfish ######################### -->
+        <h2 class="fw-bold">Parrotfish</h2>
+        <p>Parrotfish, like the wrasses, are known for their unique dentition. These teeth are used to scrape off <i>epilithic</i> algae (that is, algae that grows on rocks), and occasionally coral polyps.</p>
+        <p>Most parrotfish are herbivores, but will ingest benthic invertebrates unlucky enough to be hiding among the algae.</p>
+        <p>When rocks, coral, or stone pieces are ingested, they are crushed by pharyngeal teeth and excreted as sand. On average, a parrotfish will excrete ~250 g (9 oz) of sand per day.</p>
+        <p>The humphead parrotfish is estimated to make 90 kg (200 lbs) of sand per year!</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Stoplight parrotfish ######################### -->
+      <div class="col-md-6" id="stoplight_parrotfish">
+        <img src="./images/stoplight_parrotfish_.png" class="img-fluid" alt="Stoplight parrotfish">
+        <div class="modal fade" id="imageModal_stoplight_parrotfish_init" tabindex="-1" aria-labelledby="imageModalLabel_stoplight_parrotfish_init" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_stoplight_parrotfish_init">Stoplight parrotfish - initial phase</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/stoplight_parrotfish_init.png" alt="Stoplight parrotfish - initial phase">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Stoplight parrotfish</h2>
+            <h5 class="text-muted fw-light">Sparisoma viride</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_stoplight_parrotfish_init">
+              Initial
+            </button>
+          </div>
+        </div>
+        <div>
+            <p>Named for the marked yellow spot near the pectoral fin, visible only in the terminal phase.</p>
+            <p>Colors of the stoplight parrotfish in the initial phase, when it could be either a male or a female, are dramatically different from those in the terminal phase, when it is always a male.</p>
+        </div>
+      </div>
+
+      <!-- ##################### Redband parrotfish ######################### -->
+      <div class="col-md-6" id="redband_parrotfish">
+        <img src="./images/redband_parrotfish.png" class="img-fluid" alt="Redband parrotfish">
+        <div class="modal fade" id="imageModal_redband_parrotfish_juv" tabindex="-1" aria-labelledby="imageModalLabel_redband_parrotfish_juv" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_redband_parrotfish_juv">Redband parrotfish - juvenile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/redband_parrotfish_juv.png" alt="Redband parrotfish - juvenile">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="imageModal_redband_parrotfish_init" tabindex="-1" aria-labelledby="imageModalLabel_redband_parrotfish_init" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_redband_parrotfish_init">Redband parrotfish - initial phase</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/redband_parrotfish_init.png" alt="Redband parrotfish - initial phase">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Redband parrotfish</h2>
+            <h5 class="text-muted fw-light">Sparisoma aurofrenatum</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#imageModal_redband_parrotfish_juv">
+              Juvenile
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_redband_parrotfish_init">
+              Initial
+            </button>
+          </div>
+        </div>
+        <div>
+          <p>Juveniles are red-brown with two white stripes, and a black blotch behind the upper gill covers.</p>
+          <p>Initial phase colouration varies greatly.</p>
+          <p>The body becomes greenish in the terminal phase, with a lighter underside. The tail becomes more square-shaped with black outer tips. An orangish-pink colour band extends from below the eye to the corner of the mouth.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- ##################### Striped parrotfish ######################### -->
+      <div class="col-md-6" id="striped_parrotfish">
+        <img src="./images/striped_parrotfish.png" class="img-fluid" alt="Striped parrotfish">
+        <div class="modal fade" id="imageModal_striped_parrotfish_init" tabindex="-1" aria-labelledby="imageModalLabel_striped_parrotfish_init" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_striped_parrotfish_init">Striped parrotfish - initial phase</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/striped_parrotfish_init.png" alt="Striped parrotfish - initial phase">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Striped parrotfish</h2>
+            <h5 class="text-muted fw-light">Scarus iseri</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_striped_parrotfish_init">
+              Initial
+            </button>
+          </div>
+        </div>
+        <div>
+            <p>The most common parrotfish found in the Caribbean.</p>
+        </div>
+      </div>
+
+      <!-- ##################### Redtail parrotfish ######################### -->
+      <div class="col-md-6" id="redtail_parrotfish">
+        <img src="./images/redtail_parrotfish.png" class="img-fluid" alt="Redtail parrotfish">
+        <div class="modal fade" id="imageModal_redtail_parrotfish_init" tabindex="-1" aria-labelledby="imageModalLabel_redtail_parrotfish_init" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel_redtail_parrotfish_init">Redtail parrotfish - initial phase</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="./images/redtail_parrotfish_init.png" alt="Redtail parrotfish - initial phase">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-8">
+            <h2 class="fw-bold">Redtail parrotfish</h2>
+            <h5 class="text-muted fw-light">Sparisoma chrysopterum</h5>
+          </div>
+          <div class="col-4 d-flex align-items-center justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal_redtail_parrotfish_init">
+              Initial
+            </button>
+          </div>
+        </div>
+        <div>
+            <p>The mottled initial phase coloration provides camouflage when resting on the bottom.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col d-flex justify-content-center">
+    <a href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+      <img src="./images/na_logo.jpg" alt="Navigation" style="width: 70px; height: 50px; object-fit: contain;">
+    </a>
+  </div>
+</div>
+
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    function closeModal(sectionId) {
+      $('#menuModal').on('hidden.bs.modal', function () {
+        $('html, body').animate({
+          scrollTop: $("#"+ sectionId).offset().top
+        }, 500);
+      });
+
+      $('#menuModal').modal('hide');
+    }
+  </script>
+</body>
+</html>
+
